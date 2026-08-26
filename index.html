@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Web con Música</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 450px;
+      width: 100%;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+    p {
+      color: #94a3b8;
+      margin-bottom: 30px;
+    }
+    .player-container {
+      background: #0f172a;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #334155;
+    }
+    audio {
+      width: 100%;
+      height: 40px;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>¡Bienvenido a mi web!</h1>
+    <p>Disfruta de la música mientras navegas.</p>
+
+    <div class="player-container">
+      <!-- Cambia 'mi_cancion.mp3' por la ruta de tu archivo de audio -->
+      <audio controls autoplay loop>
+        <source src="mi_cancion.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </div>
+  </div>
+
+</body>
+</html>

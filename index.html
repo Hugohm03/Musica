@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Web con Música</title>
+  <title>Mi Web con Lista de Música</title>
   <style>
     * {
       box-sizing: border-box;
@@ -27,8 +27,8 @@
       backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 20px;
-      padding: 40px;
-      max-width: 450px;
+      padding: 30px;
+      max-width: 500px;
       width: 100%;
       box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     }
@@ -39,33 +39,23 @@
     }
     p {
       color: #94a3b8;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
-    .player-container {
-      background: #0f172a;
-      padding: 20px;
+    .spotify-container {
       border-radius: 12px;
-      border: 1px solid #334155;
-    }
-    audio {
-      width: 100%;
-      height: 40px;
-      outline: none;
+      overflow: hidden;
     }
   </style>
 </head>
 <body>
 
   <div class="card">
-    <h1>¡Bienvenido a mi web!</h1>
-    <p>Disfruta de la música mientras navegas.</p>
+    <h1>Mi Lista de Música</h1>
+    <p>Explora y escucha todas las canciones.</p>
 
-    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0zOTCXeKyojEa4kNkUqrQK?utm_source=generator&si=e504572af8604ad4" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      <!-- Cambia 'mi_cancion.mp3' por la ruta de tu archivo de audio -->
-      <audio controls autoplay loop>
-        <source src="mi_cancion.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-      </audio>
+    <div class="spotify-container">
+      <!-- AQUÍ PEGAS EL CÓDIGO DE TU PLAYLIST DE SPOTIFY -->
+      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6cLTghZc0XunThpTYrgubo?utm_source=generator&si=f406c0fabd6b4a3f" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
   </div>
 
